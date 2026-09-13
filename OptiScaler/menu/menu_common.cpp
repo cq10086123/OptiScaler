@@ -78,87 +78,87 @@ static ImVec2 splashSize(0.0f, 0.0f);
 static double splashStart = 0.0;
 static double splashLimit = 0.0;
 static std::vector<std::string> splashTextEn = { "Cope smarter, not harder",
-                                               "Coping is strong with this one...",
-                                               "This is where the fun begins...",
-                                               "Got any more of them scalers?...",
-                                               "Fake pixels and even faker frames...",
-                                               "Fake frames, get your fake frames...",
-                                               "I'm here to kick pixels and chew frames...",
-                                               "I find your lack of supersampling disturbing...",
-                                               "Frame by frame, I scale-up!",
-                                               "Resistance is futile. Your pixels will be upscaled.",
-                                               "I've got 99 problems, but low-res ain't one.",
-                                               "It's over, DLSS, I have the higher ground!",
-                                               "This isn't the resolution you're looking for",
-                                               "To infinity and beyond... with ray tracing off",
-                                               "I have a bad feeling about this frame pacing",
-                                               "It's Dangerous to Go Alone-Take This Upscaler",
-                                               "Upscaled beyond recognition.",
-                                               "Trust the process. Ignore the shimmer.",
-                                               "Real fake frames. Certified.",
-                                               "The illusion of performance",
-                                               "This upscaler belongs in a museum!",
-                                               "Because native rendering is overrated.",
-                                               "The more you upscaler, the more you save",
-                                               "It's never too late to buy a better GPU",
-                                               "We don't need real pixels where we're going",
-                                               "Did you know that Intel released XeFG for everyone?",
-                                               "MFG totally works with Nukem's 100%% no scam",
-                                               "Some of those pixels might even be real!",
-                                               "Just don't look too closely at the image",
-                                               "Even supports \"software\" XeSS!",
-                                               "It's too blurry to go alone, take RCAS with you",
-                                               "Thanks nitec, back to you nitec",
-                                               "Tested and approved by By-U",
-                                               "0.8 was an inside job",
-                                               "FSR4 DP4a wenETA, AMD plz",
-                                               "OptiCopers, assemble!",
-                                               "The Way It's Meant To Be Upscaled",
-                                               "Your game may not even crash today",
-                                               "Expanded and Enhanced",
-                                               "It's only my 5th crash today",
-                                               "Latency with FG? But I have good internet",
-                                               "Console peasants can't do that",
-                                               "Hope you don't have a good eyesight",
-                                               "Such an aggressive upscaling? A bold move",
-                                               "I almost don't feel the input lag",
-                                               "And that's how you get to 60 FPS",
-                                               "Together We Upscale",
-                                               "For upscalers, by upscalers",
-                                               "Opti Sports, it's in the sampling",
-                                               "Render in your world. Upscale in ours",
-                                               "All your pixels are belong to us",
-                                               "Upscaling for the masses, not the classes",
-                                               "Generating discord since 2023",
-                                               "Enabling DLSS since 2023",
-                                               "[REDACTED] never looked better",
-                                               "Free and always free",
-                                               "Getting unshackled from green chains in progress...",
-                                               "Who's Nukem anyway?",
-                                               "Compiling shaders... ETA: 05h:49m",
-                                               "Did you really just pay 70 EUR for this game?!",
-                                               "Guess who forgot about a nullptr check again",
-                                               "AI can't outslop this",
-                                               "Guess we're pre-alpha build demos now",
-                                               "New app on the block - TH",
-                                               "One more stutter and I might lose it",
-                                               "Mostly stable, unlike the driver",
-                                               "Vul... what? ~AMD",
-                                               "My 8 points are floating",
-                                               "No floating here - I'm strictly between -128 and 127",
-                                               "Fake it til you bake it",
-                                               "Worst case just turn it off and on",
-                                               "*On a generative damage control mode at geometry level*",
-                                               "Deep Learning Slop Sampling 5",
-                                               "2D AI filters, now powered by just 2x 5090s",
-                                               "Neural Slop Sampling with DLSS5",
-                                               "DLSS 5 - the way it's meant to be slopped",
-                                               "Just when I think I'm out, they scale me back in",
-                                               "Like going in the first gear on the highway",
-                                               "Nitec's Bizarre Upscaling",
-                                               "\"Framegen really attracts some strange clientelle\"",
-                                               "How to remove those corny messages?!",
-                                               "<Your funny text goes here>" };
+                                                 "Coping is strong with this one...",
+                                                 "This is where the fun begins...",
+                                                 "Got any more of them scalers?...",
+                                                 "Fake pixels and even faker frames...",
+                                                 "Fake frames, get your fake frames...",
+                                                 "I'm here to kick pixels and chew frames...",
+                                                 "I find your lack of supersampling disturbing...",
+                                                 "Frame by frame, I scale-up!",
+                                                 "Resistance is futile. Your pixels will be upscaled.",
+                                                 "I've got 99 problems, but low-res ain't one.",
+                                                 "It's over, DLSS, I have the higher ground!",
+                                                 "This isn't the resolution you're looking for",
+                                                 "To infinity and beyond... with ray tracing off",
+                                                 "I have a bad feeling about this frame pacing",
+                                                 "It's Dangerous to Go Alone-Take This Upscaler",
+                                                 "Upscaled beyond recognition.",
+                                                 "Trust the process. Ignore the shimmer.",
+                                                 "Real fake frames. Certified.",
+                                                 "The illusion of performance",
+                                                 "This upscaler belongs in a museum!",
+                                                 "Because native rendering is overrated.",
+                                                 "The more you upscaler, the more you save",
+                                                 "It's never too late to buy a better GPU",
+                                                 "We don't need real pixels where we're going",
+                                                 "Did you know that Intel released XeFG for everyone?",
+                                                 "MFG totally works with Nukem's 100%% no scam",
+                                                 "Some of those pixels might even be real!",
+                                                 "Just don't look too closely at the image",
+                                                 "Even supports \"software\" XeSS!",
+                                                 "It's too blurry to go alone, take RCAS with you",
+                                                 "Thanks nitec, back to you nitec",
+                                                 "Tested and approved by By-U",
+                                                 "0.8 was an inside job",
+                                                 "FSR4 DP4a wenETA, AMD plz",
+                                                 "OptiCopers, assemble!",
+                                                 "The Way It's Meant To Be Upscaled",
+                                                 "Your game may not even crash today",
+                                                 "Expanded and Enhanced",
+                                                 "It's only my 5th crash today",
+                                                 "Latency with FG? But I have good internet",
+                                                 "Console peasants can't do that",
+                                                 "Hope you don't have a good eyesight",
+                                                 "Such an aggressive upscaling? A bold move",
+                                                 "I almost don't feel the input lag",
+                                                 "And that's how you get to 60 FPS",
+                                                 "Together We Upscale",
+                                                 "For upscalers, by upscalers",
+                                                 "Opti Sports, it's in the sampling",
+                                                 "Render in your world. Upscale in ours",
+                                                 "All your pixels are belong to us",
+                                                 "Upscaling for the masses, not the classes",
+                                                 "Generating discord since 2023",
+                                                 "Enabling DLSS since 2023",
+                                                 "[REDACTED] never looked better",
+                                                 "Free and always free",
+                                                 "Getting unshackled from green chains in progress...",
+                                                 "Who's Nukem anyway?",
+                                                 "Compiling shaders... ETA: 05h:49m",
+                                                 "Did you really just pay 70 EUR for this game?!",
+                                                 "Guess who forgot about a nullptr check again",
+                                                 "AI can't outslop this",
+                                                 "Guess we're pre-alpha build demos now",
+                                                 "New app on the block - TH",
+                                                 "One more stutter and I might lose it",
+                                                 "Mostly stable, unlike the driver",
+                                                 "Vul... what? ~AMD",
+                                                 "My 8 points are floating",
+                                                 "No floating here - I'm strictly between -128 and 127",
+                                                 "Fake it til you bake it",
+                                                 "Worst case just turn it off and on",
+                                                 "*On a generative damage control mode at geometry level*",
+                                                 "Deep Learning Slop Sampling 5",
+                                                 "2D AI filters, now powered by just 2x 5090s",
+                                                 "Neural Slop Sampling with DLSS5",
+                                                 "DLSS 5 - the way it's meant to be slopped",
+                                                 "Just when I think I'm out, they scale me back in",
+                                                 "Like going in the first gear on the highway",
+                                                 "Nitec's Bizarre Upscaling",
+                                                 "\"Framegen really attracts some strange clientelle\"",
+                                                 "How to remove those corny messages?!",
+                                                 "<Your funny text goes here>" };
 
 static std::vector<std::string> splashTextZh = {
     "聪明地摆烂, 而不是硬扛",
@@ -1656,9 +1656,9 @@ void MenuCommon::UpdateVersionAndStartupNotifications(RenderMenuContext& ctx)
 
             ImGuiToast notification { ImGuiToastType::Warning, 10000 };
             notification.setTitle(L("Late Streamline hook detected"));
-            notification.setContent(
-                L("Consider renaming OptiScaler from %s to other supported name.\nYou may experience issues otherwise."),
-                filename.c_str());
+            notification.setContent(L("Consider renaming OptiScaler from %s to other supported name.\nYou may "
+                                      "experience issues otherwise."),
+                                    filename.c_str());
             ImGui::InsertNotification(notification);
         }
 
@@ -2105,7 +2105,8 @@ void MenuCommon::RenderPerformanceOverlay(RenderMenuContext& ctx)
                     ImGui::Spacing();
                 }
 
-                secondLine = StrFmt(L("Frame Time: %7.2f ms, Avg: %7.2f ms"), state.frameTimes.back(), averageFrameTime);
+                secondLine =
+                    StrFmt(L("Frame Time: %7.2f ms, Avg: %7.2f ms"), state.frameTimes.back(), averageFrameTime);
             }
 
             // Prepare Line 3
@@ -2450,7 +2451,7 @@ void MenuCommon::RenderMainMenuHeaderMessages(RenderMenuContext& ctx)
             std::string joinedUpscalers(joined.begin(), joined.end());
 
             ImGui::Text(L("Please select %s as upscaler from game\noptions and load a save game "
-                        "to enable Opti settings.\nUpscalers don't always work in menus."),
+                          "to enable Opti settings.\nUpscalers don't always work in menus."),
                         joinedUpscalers.c_str());
 
             if (config->UseHQFont.value_or_default())
@@ -2470,7 +2471,8 @@ void MenuCommon::RenderMainMenuHeaderMessages(RenderMenuContext& ctx)
             {
                 ImGui::Text("nvngx.dll: %s", state.nvngxExists ? L("Exists") : L("Doesn't Exist"));
                 ImGui::SameLine(0.0f, 16.0f);
-                ImGui::Text("nvngx replacement: %s", state.nvngxReplacement.has_value() ? L("Exists") : L("Doesn't Exist"));
+                ImGui::Text("nvngx replacement: %s",
+                            state.nvngxReplacement.has_value() ? L("Exists") : L("Doesn't Exist"));
             }
 
             ImGui::Text("libxess: %s",
@@ -2642,7 +2644,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
         if (primaryGpu.dlssCapable && !state.NVNGX_DLSS_Path.has_value())
         {
             ImGui::Spacing();
-            ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.8f, 0.f, 1.f)), L("nvngx_dlss.dll not found, DLSS disabled!"));
+            ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.8f, 0.f, 1.f)),
+                               L("nvngx_dlss.dll not found, DLSS disabled!"));
         }
     }
 
@@ -2822,32 +2825,33 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
 
                         if (colorSpaceChanged)
                         {
-                        bool isSrgb = (currentColorSpace == 2);
-                        bool isPq = (currentColorSpace == 3);
+                            bool isSrgb = (currentColorSpace == 2);
+                            bool isPq = (currentColorSpace == 3);
 
-                        config->FsrNonLinearSRGB = isSrgb;
-                        config->FsrNonLinearPQ = isPq;
+                            config->FsrNonLinearSRGB = isSrgb;
+                            config->FsrNonLinearPQ = isPq;
 
-                        if (isSrgb || isPq)
-                        {
-                            config->FsrNonLinearColorSpace.set_volatile_value(true);
-                        }
-                        else if (currentColorSpace == 1) // Just non-Linear
-                        {
-                            config->FsrNonLinearColorSpace = true;
-                        }
-                        else // Linear
-                        {
-                            config->FsrNonLinearColorSpace = false;
-                        }
+                            if (isSrgb || isPq)
+                            {
+                                config->FsrNonLinearColorSpace.set_volatile_value(true);
+                            }
+                            else if (currentColorSpace == 1) // Just non-Linear
+                            {
+                                config->FsrNonLinearColorSpace = true;
+                            }
+                            else // Linear
+                            {
+                                config->FsrNonLinearColorSpace = false;
+                            }
 
-                        state.newBackend = currentBackend;
-                        MARK_ALL_BACKENDS_CHANGED();
+                            state.newBackend = currentBackend;
+                            MARK_ALL_BACKENDS_CHANGED();
                         }
                     }
-                    ShowHelpMarker(L("Select the input color space that the game uses.\n"
-                                   "Non-Linear / sRGB: Might improve FSR4 upscaling quality, might increase ghosting.\n"
-                                   "PQ: Rarest, might increase ghosting and break lights."));
+                    ShowHelpMarker(
+                        L("Select the input color space that the game uses.\n"
+                          "Non-Linear / sRGB: Might improve FSR4 upscaling quality, might increase ghosting.\n"
+                          "PQ: Rarest, might increase ghosting and break lights."));
 
                     // FSR 4 Presets
                     const char* presets[] = { "Default",  "Preset 0", "Preset 1", "Preset 2",
@@ -2885,13 +2889,13 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                         }
                     }
                     ShowHelpMarker(L("Each internal FSR4 preset is tuned for a specific resolution.\n"
-                                   "Selecting an FSR4 preset won't change the in-game\nupscaler preset!!!\n\n"
-                                   "Preset 0 is meant for FSR Native AA\n"
-                                   "Preset 1 is meant for Quality/Ultra Quality\n"
-                                   "Preset 2 is meant for Balanced\n"
-                                   "Preset 3 is meant for Performance\n"
-                                   "Preset 4 is meant for DRS\n"
-                                   "Preset 5 is meant for Ultra Performance"));
+                                     "Selecting an FSR4 preset won't change the in-game\nupscaler preset!!!\n\n"
+                                     "Preset 0 is meant for FSR Native AA\n"
+                                     "Preset 1 is meant for Quality/Ultra Quality\n"
+                                     "Preset 2 is meant for Balanced\n"
+                                     "Preset 3 is meant for Performance\n"
+                                     "Preset 4 is meant for DRS\n"
+                                     "Preset 5 is meant for Ultra Performance"));
 
                     // Display the active preset right next to the combo box instead of using a table
                     ImGui::SameLine();
@@ -2923,17 +2927,17 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                     if (majorFsrVersion > 3)
                     {
                         ShowHelpMarker(L("Top left: Dilated Motion Vectors\n"
-                                       "Top right: Predicted Blend Factor"));
+                                         "Top right: Predicted Blend Factor"));
                     }
                     else
                     {
                         ShowHelpMarker(L("Top left: Dilated Motion Vectors\n"
-                                       "Top middle: Protected Areas\n"
-                                       "Top right: Dilated Depth\n"
-                                       "Middle: Upscaled frame\n"
-                                       "Bottom left: Disocclusion mask\n"
-                                       "Bottom middle: Reactiveness\n"
-                                       "Bottom right: Detail Protection Takedown"));
+                                         "Top middle: Protected Areas\n"
+                                         "Top right: Dilated Depth\n"
+                                         "Middle: Upscaled frame\n"
+                                         "Bottom left: Disocclusion mask\n"
+                                         "Bottom middle: Reactiveness\n"
+                                         "Bottom right: Detail Protection Takedown"));
                     }
 
                     if (majorFsrVersion > 3)
@@ -2947,7 +2951,7 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                         }
 
                         ShowHelpMarker(L("After changing this option, please Save Settings.\n"
-                                       "It will be applied on next launch."));
+                                         "It will be applied on next launch."));
                     }
                 }
 
@@ -3030,8 +3034,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                             config->FsrVelocity = velocity;
 
                         ShowHelpMarker(L("Value of 0.0f can improve temporal stability of bright pixels\n"
-                                       "Lower values are more stable with ghosting\n"
-                                       "Higher values are more pixelly, but less ghosting"));
+                                         "Lower values are more stable with ghosting\n"
+                                         "Higher values are more pixelly, but less ghosting"));
 
                         if (currentFeature->Version() >= feature_version { 3, 1, 4 })
                         {
@@ -3041,7 +3045,7 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                                 config->FsrReactiveScale = reactiveScale;
 
                             ShowHelpMarker(L("Meant for development purpose to test if\n"
-                                           "writing a larger value to reactive mask, reduces ghosting."));
+                                             "writing a larger value to reactive mask, reduces ghosting."));
 
                             // Shading Scale
                             float shadingScale = config->FsrShadingScale.value_or_default();
@@ -3049,7 +3053,7 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                                 config->FsrShadingScale = shadingScale;
 
                             ShowHelpMarker(L("Increasing this scales FSR3.1 computed shading\n"
-                                           "change value at read to have higher reactiveness."));
+                                             "change value at read to have higher reactiveness."));
 
                             // Accumulation Added Per Frame
                             float accAddPerFrame = config->FsrAccAddPerFrame.value_or_default();
@@ -3057,11 +3061,11 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                                 config->FsrAccAddPerFrame = accAddPerFrame;
 
                             ShowHelpMarker(L("Corresponds to amount of accumulation added per frame\n"
-                                           "at pixel coordinate where disocclusion occured or when\n"
-                                           "reactive mask value is > 0.0f. Decreasing this and \n"
-                                           "drawing the ghosting object (IE no mv) to reactive mask \n"
-                                           "with value close to 1.0f can decrease temporal ghosting.\n"
-                                           "Decreasing this could result in more thin feature pixels flickering."));
+                                             "at pixel coordinate where disocclusion occured or when\n"
+                                             "reactive mask value is > 0.0f. Decreasing this and \n"
+                                             "drawing the ghosting object (IE no mv) to reactive mask \n"
+                                             "with value close to 1.0f can decrease temporal ghosting.\n"
+                                             "Decreasing this could result in more thin feature pixels flickering."));
 
                             // Min Disocclusion Accumulation
                             float minDisOccAcc = config->FsrMinDisOccAcc.value_or_default();
@@ -3069,8 +3073,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                                 config->FsrMinDisOccAcc = minDisOccAcc;
 
                             ShowHelpMarker(L("Increasing this value may reduce white pixel temporal\n"
-                                           "flickering around swaying thin objects that are disoccluding \n"
-                                           "one another often. Too high value may increase ghosting."));
+                                             "flickering around swaying thin objects that are disoccluding \n"
+                                             "one another often. Too high value may increase ghosting."));
                         }
 
                         ImGui::PopItemWidth();
@@ -3100,7 +3104,7 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
             {
                 ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.8f, 0.f, 1.f)), L("Presets are overridden externally"));
                 ShowHelpMarker(L("This usually happens due to using tools\n"
-                               "such as Nvidia App or Nvidia Inspector"));
+                                 "such as Nvidia App or Nvidia Inspector"));
                 // ImGui::Text(L("Selecting setting below will disable that external override\n")
                 //             "but you need to Save Settings and restart the game");
 
@@ -3114,8 +3118,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                     config->DLSSDRenderPresetOverride = pOverride;
 
                 ShowHelpMarker(L("Each render preset has it strengths and weaknesses\n"
-                               "Override to potentially improve image quality\n"
-                               "Press apply after enable/disable"));
+                                 "Override to potentially improve image quality\n"
+                                 "Press apply after enable/disable"));
 
                 /*
                 auto currentPresetIndex = GetPresetIndex(currentFeature, true);
@@ -3186,7 +3190,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
 
             ImGui::Spacing();
 
-            if (auto ch = ScopedCollapsingHeader(usesDlssd ? L("Advanced DLSSD Settings") : L("Advanced DLSS Settings"));
+            if (auto ch =
+                    ScopedCollapsingHeader(usesDlssd ? L("Advanced DLSSD Settings") : L("Advanced DLSS Settings"));
                 ch.IsHeaderOpen())
             {
                 ScopedIndent indent {};
@@ -3197,8 +3202,8 @@ void MenuCommon::RenderActiveUpscalerSettings(RenderMenuContext& ctx)
                     config->UseGenericAppIdWithDlss = appIdOverride;
 
                 ShowHelpMarker(L("Use generic appid with NGX\n"
-                               "Fixes OptiScaler preset override not working with certain games\n"
-                               "Requires a game restart"));
+                                 "Fixes OptiScaler preset override not working with certain games\n"
+                                 "Requires a game restart"));
 
                 ImGui::BeginDisabled(!config->RenderPresetOverride.value_or_default() || overridden);
                 ImGui::Spacing();
@@ -3451,7 +3456,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
 
             PopulateCombo("FG Input", config->FGInput, inputOptions);
             ShowTooltip(L("The data source to be used for FG\n"
-                        "The native FG which the game supports"));
+                          "The native FG which the game supports"));
 
             ImGui::TableNextColumn();
 
@@ -3614,7 +3619,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
         {
             ImGui::Checkbox(L("Show Detected UI"), &state.fgHudlessCompare);
             ShowHelpMarker(L("Needs HUDless texture to compare with final image.\n"
-                           "UI elements and ONLY UI elements should have a pink tint!"));
+                             "UI elements and ONLY UI elements should have a pink tint!"));
 
             const auto isUsingUIAny = fgOutput->IsUsingUIAny();
 
@@ -3626,7 +3631,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                 config->FGDrawUIOverFG = drawUIOverFG;
             }
             ShowHelpMarker(L("Draws UI resource over the final image\n"
-                           "If no UI visible, enable this!"));
+                             "If no UI visible, enable this!"));
 
             ImGui::EndDisabled();
 
@@ -3701,7 +3706,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                             config->FGDepthValidNow = depthValidNow;
 
                         ShowHelpMarker(L("Will use more VRAM, but Uniscaler needs this\n"
-                                       "Maybe some other games might need too"));
+                                         "Maybe some other games might need too"));
 
                         ImGui::SameLine(0.0f, 16.0f);
 
@@ -3710,7 +3715,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                             config->FGVelocityValidNow = velocityValidNow;
 
                         ShowHelpMarker(L("Will use more VRAM, but Uniscaler needs this\n"
-                                       "Maybe some other games might need too"));
+                                         "Maybe some other games might need too"));
 
                         bool hudlessValidNow = config->FGHudlessValidNow.value_or_default();
                         if (ImGui::Checkbox(L("HUDless as ValidNow"), &hudlessValidNow))
@@ -3745,7 +3750,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                         }
 
                         ShowHelpMarker(L("Number of frames the FG is allowed to be ahead of the game\n"
-                                       "Might prevent FG on/off switching, but also might cause issues"));
+                                         "Might prevent FG on/off switching, but also might cause issues"));
 
                         ImGui::PopItemWidth();
 
@@ -3782,7 +3787,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                         ImGui::PopItemWidth();
 
                         ShowHelpMarker(L("Select source for frametime\n"
-                                       "Might help frame pacing and stutter issues"));
+                                         "Might help frame pacing and stutter issues"));
                     }
                 }
 
@@ -3793,7 +3798,7 @@ void MenuCommon::RenderFrameGenerationSelection(RenderMenuContext& ctx)
                         config->FGHudCutoff = fgHudCutoff;
 
                     ShowHelpMarker(L("Cutoffs transparency from UI to help with interpolation\n"
-                                   "You can use Show Detected UI to see the difference\n0.0 is auto"));
+                                     "You can use Show Detected UI to see the difference\n0.0 is auto"));
                 }
             }
         }
@@ -3893,13 +3898,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                 }
             }
             ShowHelpMarker(L("Enable FSR3.1-FG Debug view\n\n"
-                           "Top left: Game Motion Vectors\n"
-                           "Top middle: GMV Depth\n"
-                           "Top right: Optical Flow MV\n"
-                           "Middle: Interpolated frame only\n"
-                           "Bottom left: Disocclusion mask\n"
-                           "Bottom middle: Interpolation source (w/o UI)\n"
-                           "Bottom right: HUDless resource"));
+                             "Top left: Game Motion Vectors\n"
+                             "Top middle: GMV Depth\n"
+                             "Top right: Optical Flow MV\n"
+                             "Middle: Interpolated frame only\n"
+                             "Bottom left: Disocclusion mask\n"
+                             "Bottom middle: Interpolation source (w/o UI)\n"
+                             "Bottom right: HUDless resource"));
 
             ImGui::SameLine(0.0f, 16.0f);
 
@@ -3913,7 +3918,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                 }
 
                 ShowHelpMarker(L("After changing this option, please Save Settings\n"
-                               "It will be applied on next launch."));
+                                 "It will be applied on next launch."));
             }
 
             ImGui::Spacing();
@@ -4016,30 +4021,30 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::InputFloat(L("Safety Margins in ms"), &fptSafetyMargin, 0.01f, 0.1f, "%.2f"))
                             config->FGFPTSafetyMarginInMs = fptSafetyMargin;
                         ShowHelpMarker(L("Safety margins in millisecons\n"
-                                       "FSR default value: 0.1ms\n"
-                                       "Opti default value: 0.01ms"));
+                                         "FSR default value: 0.1ms\n"
+                                         "Opti default value: 0.01ms"));
 
                         auto fptVarianceFactor = config->FGFPTVarianceFactor.value_or_default();
                         if (ImGui::SliderFloat(L("Variance Factor"), &fptVarianceFactor, 0.0f, 1.0f, "%.2f"))
                             config->FGFPTVarianceFactor = fptVarianceFactor;
                         ShowHelpMarker(L("Variance factor\n"
-                                       "FSR default value: 0.1\n"
-                                       "Opti default value: 0.3"));
+                                         "FSR default value: 0.1\n"
+                                         "Opti default value: 0.3"));
                         ImGui::PopItemWidth();
 
                         auto fpHybridSpin = config->FGFPTAllowHybridSpin.value_or_default();
                         if (ImGui::Checkbox(L("Enable Hybrid Spin"), &fpHybridSpin))
                             config->FGFPTAllowHybridSpin = fpHybridSpin;
                         ShowHelpMarker(L("Allows pacing spinlock to sleep, should reduce CPU usage\n"
-                                       "Might cause slow ramp up of FPS"));
+                                         "Might cause slow ramp up of FPS"));
 
                         ImGui::PushItemWidth(115.0f * menuResScale);
                         auto fptHybridSpinTime = config->FGFPTHybridSpinTime.value_or_default();
                         if (ImGui::SliderInt(L("Hybrid Spin Time"), &fptHybridSpinTime, 0, 100))
                             config->FGFPTHybridSpinTime = fptHybridSpinTime;
                         ShowHelpMarker(L("How long to spin if FPTHybridSpin is true. Measured in timer "
-                                       "resolution units.\n"
-                                       "Not recommended to go below 2. Will result in frequent overshoots"));
+                                         "resolution units.\n"
+                                         "Not recommended to go below 2. Will result in frequent overshoots"));
                         ImGui::PopItemWidth();
 
                         auto fpWaitForSingleObjectOnFence =
@@ -4125,8 +4130,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                 config->FGXeFGIgnoreInitChecks = ignoreChecks;
 
             ShowHelpMarker(L("Ignores all prechecks for XeFG\n"
-                           "Don't use this option to skip MV size warning for UE games!\n"
-                           "It might cause crashes and bad IQ!"));
+                             "Don't use this option to skip MV size warning for UE games!\n"
+                             "It might cause crashes and bad IQ!"));
         }
 
         ImGui::BeginDisabled(!correctMVs || cantActivate);
@@ -4184,8 +4189,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             config->FGXeFGUIComposition = fgCompositeUI;
 
         ShowHelpMarker(L("Disable HUD/UI interpolation\n"
-                       "Reverts back to previous XeFG 2 behaviour\n\n"
-                       "Fixes artifacting transparent HUD/UI"));
+                         "Reverts back to previous XeFG 2 behaviour\n\n"
+                         "Fixes artifacting transparent HUD/UI"));
         ImGui::EndDisabled();
 
         bool fgDV = config->FGXeFGDebugView.value_or_default();
@@ -4209,10 +4214,10 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             config->FGXeFGForceBorderless = fgBorderless;
 
         ShowHelpMarker(L("Forces Borderless display mode\n\n"
-                       "For best results, set fullscreen \n"
-                       "resolution to your display resolution\n"
-                       "Might cause some instability issues.\n\n"
-                       "NEEDS GAME RESTART TO BE ACTIVE!"));
+                         "For best results, set fullscreen \n"
+                         "resolution to your display resolution\n"
+                         "Might cause some instability issues.\n\n"
+                         "NEEDS GAME RESTART TO BE ACTIVE!"));
 
         // Disable this for now
         // ImGui::SameLine(0.0f, 16.0f);
@@ -4456,7 +4461,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                     config->FGImmediateCapture = immediate;
                 }
                 ShowHelpMarker(L("Enables capturing of resources before shader execution.\nIncrease HUDless "
-                               "capture chances, but might cause capturing of unnecessary resources."));
+                                 "capture chances, but might cause capturing of unnecessary resources."));
 
                 ImGui::PopItemWidth();
 
@@ -4497,8 +4502,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         LOG_DEBUG("Enabled set FGResourceBlocking: {}", rb);
                     }
                     ShowHelpMarker(L("Block rarely used resources from using as HUDless \n"
-                                   "to prevent flickers and other issues\n\n"
-                                   "HUDfix enable/disable will reset the block list!"));
+                                     "to prevent flickers and other issues\n\n"
+                                     "HUDfix enable/disable will reset the block list!"));
 
                     ImGui::SameLine(0.0f, 16.0f);
 
@@ -4509,8 +4514,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         LOG_DEBUG("Enabled set FGRelaxedResolutionCheck: {}", rrc);
                     }
                     ShowHelpMarker(L("Relax resolution checks for HUDless by 32 pixels \n"
-                                   "Helps games which use black borders for some \n"
-                                   "resolutions and screen ratios (e.g. Witcher 3)"));
+                                     "Helps games which use black borders for some \n"
+                                     "resolutions and screen ratios (e.g. Witcher 3)"));
 
                     ImGui::BeginDisabled(state.fgResetCapturedResources);
                     ImGui::PushItemWidth(95.0f * menuResScale);
@@ -4572,7 +4577,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable RTV Tracking"), &disableRTV))
                             config->FGHudfixDisableRTV = disableRTV;
                         ShowHelpMarker(L("Disable tracking of CreateRenderTargetView\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::SameLine(0.0f, 16.0f);
 
@@ -4580,13 +4585,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable SRV Tracking"), &disableSRV))
                             config->FGHudfixDisableSRV = disableSRV;
                         ShowHelpMarker(L("Disable tracking of CreateShaderResourceView\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         auto disableUAV = config->FGHudfixDisableUAV.value_or_default();
                         if (ImGui::Checkbox(L("Disable UAV Tracking"), &disableUAV))
                             config->FGHudfixDisableUAV = disableUAV;
                         ShowHelpMarker(L("Disable tracking of CreateUnorderedAccessView\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::SameLine(0.0f, 16.0f);
 
@@ -4594,13 +4599,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable OM Tracking"), &disableOM))
                             config->FGHudfixDisableOM = disableOM;
                         ShowHelpMarker(L("Disable tracking of OMSetRenderTargets\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         auto disableSCR = config->FGHudfixDisableSCR.value_or_default();
                         if (ImGui::Checkbox(L("Disable SCR Tracking"), &disableSCR))
                             config->FGHudfixDisableSCR = disableSCR;
                         ShowHelpMarker(L("Disable tracking of SetComputeRootDescriptorTable\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::SameLine(0.0f, 16.0f);
 
@@ -4608,7 +4613,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable SGR Tracking"), &disableSGR))
                             config->FGHudfixDisableSGR = disableSGR;
                         ShowHelpMarker(L("Disable tracking of SetGraphicsRootDescriptorTable\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::Spacing();
 
@@ -4616,7 +4621,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable DI Tracking"), &disableDI))
                             config->FGHudfixDisableDI = disableDI;
                         ShowHelpMarker(L("Disable tracking of DrawInstanced\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::SameLine(0.0f, 16.0f);
 
@@ -4624,13 +4629,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         if (ImGui::Checkbox(L("Disable DII Tracking"), &disableDII))
                             config->FGHudfixDisableDII = disableDII;
                         ShowHelpMarker(L("Disable tracking of DrawIndexedInstanced\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         auto disableDispatch = config->FGHudfixDisableDispatch.value_or_default();
                         if (ImGui::Checkbox(L("Disable Dispatch Tracking"), &disableDispatch))
                             config->FGHudfixDisableDispatch = disableDispatch;
                         ShowHelpMarker(L("Disable tracking of Dispatch\n"
-                                       "This might help filtering of wrong HUDless resources"));
+                                         "This might help filtering of wrong HUDless resources"));
 
                         ImGui::TreePop();
                     }
@@ -4643,13 +4648,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                     if (ImGui::Checkbox(L("FG Make MV Copies"), &makeMVCopies))
                         config->FGMakeMVCopy = makeMVCopies;
                     ShowHelpMarker(L("Make a copy of motion vectors to use with OptiFG\n"
-                                   "For preventing corruptions that might happen"));
+                                     "For preventing corruptions that might happen"));
 
                     bool makeDepthCopies = config->FGMakeDepthCopy.value_or_default();
                     if (ImGui::Checkbox(L("FG Make Depth Copies"), &makeDepthCopies))
                         config->FGMakeDepthCopy = makeDepthCopies;
                     ShowHelpMarker(L("Make a copy of depth to use with OptiFG\n"
-                                   "For preventing corruptions that might happen"));
+                                     "For preventing corruptions that might happen"));
 
                     ImGui::PushItemWidth(115.0f * menuResScale);
                     float depthScaleMax = config->FGDepthScaleMax.value_or_default();
@@ -4668,7 +4673,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                     if (ImGui::Checkbox(L("FG Use Mutex for Present"), &useMutexForPresent))
                         config->FGUseMutexForSwapchain = useMutexForPresent;
                     ShowHelpMarker(L("Use mutex to prevent desync of FG and crashes\n"
-                                   "Disabling might improve the perf but decrease stability"));
+                                     "Disabling might improve the perf but decrease stability"));
 
                     ImGui::TreePop();
                 }
@@ -4745,7 +4750,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             else if (ReflexHooks::dlssgFrameCountToGenerate() == 0 && !dmfgActive)
             {
                 ImGui::Text(L("Please select DLSS Frame Generation in the game options\n"
-                            "You might need to select DLSS first"));
+                              "You might need to select DLSS first"));
             }
 
             if (state.swapchainApi == DX12)
@@ -4777,7 +4782,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         config->NvngxFGMakeDepthCopy = makeDepthCopy;
                     }
                     ShowHelpMarker(L("Makes a copy of the depth buffer\nCan fix broken visuals in some games on AMD "
-                                   "GPUs under Windows\nCan cause stutters, so best to use only when necessary"));
+                                     "GPUs under Windows\nCan cause stutters, so best to use only when necessary"));
                 }
             }
             else if (state.swapchainApi == Vulkan)
@@ -4800,8 +4805,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             {
                 auto featureVer = Nvngx_FG::version();
                 auto antighostingVer = Nvngx_FG::extraVersion();
-                ImGui::Text(L("DE Ver: %d.%d.%d.%d   GB Ver: %d.%d"), featureVer.major, featureVer.minor, featureVer.patch,
-                            featureVer.reserved, antighostingVer.major, antighostingVer.minor);
+                ImGui::Text(L("DE Ver: %d.%d.%d.%d   GB Ver: %d.%d"), featureVer.major, featureVer.minor,
+                            featureVer.patch, featureVer.reserved, antighostingVer.major, antighostingVer.minor);
 
                 static std::vector<FlagDefinition> common_flags = {
                     { "Antighosting (GB)", 0x00100000, "Enable anti-ghosting correction" },
@@ -4939,7 +4944,8 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                         LOG_DEBUG("Async set FGChanged");
                     }
                 }
-                ShowHelpMarker(L("Enable Async for better FG performance\nMight cause crashes, especially with HUD Fix!"));
+                ShowHelpMarker(
+                    L("Enable Async for better FG performance\nMight cause crashes, especially with HUD Fix!"));
 
                 ImGui::SameLine(0.0f, 20.0f * menuResScale);
                 bool fgDV = config->FGDebugView.value_or_default();
@@ -4954,13 +4960,13 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                     }
                 }
                 ShowHelpMarker(L("Enable FSR3.1-FG Debug view\n\n"
-                               "Top left: Game Motion Vectors\n"
-                               "Top middle: GMV Depth\n"
-                               "Top right: Optical Flow MV\n"
-                               "Middle: Interpolated frame only\n"
-                               "Bottom left: Disocclusion mask\n"
-                               "Bottom middle: Interpolation source (w/o UI)\n"
-                               "Bottom right: HUDless resource"));
+                                 "Top left: Game Motion Vectors\n"
+                                 "Top middle: GMV Depth\n"
+                                 "Top right: Optical Flow MV\n"
+                                 "Middle: Interpolated frame only\n"
+                                 "Bottom left: Disocclusion mask\n"
+                                 "Bottom middle: Interpolation source (w/o UI)\n"
+                                 "Bottom right: HUDless resource"));
 
                 if (Nvngx_FG::version().major > 3)
                 {
@@ -4973,7 +4979,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
                     }
 
                     ShowHelpMarker(L("After changing this option, please Save Settings\n"
-                                   "It will be applied on next launch."));
+                                     "It will be applied on next launch."));
                 }
             }
 
@@ -5008,7 +5014,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             {
                 ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.f, 0.f, 1.f)), "OFF");
                 ImGui::Text(L("Please select FSR Frame Generation in the game options\n"
-                            "You might need to select FSR first"));
+                              "You might need to select FSR first"));
             }
         }
 
@@ -5054,7 +5060,7 @@ void MenuCommon::RenderFrameGenerationRuntimeSettings(RenderMenuContext& ctx)
             {
                 ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.f, 0.f, 1.f)), "OFF");
                 ImGui::Text(L("Please select DLSS Frame Generation in the game options\n"
-                            "You might need to select DLSS first"));
+                              "You might need to select DLSS first"));
             }
         }
     }
@@ -5134,12 +5140,12 @@ void MenuCommon::RenderFsrCommonSettings(RenderMenuContext& ctx)
                 if (ImGui::SliderFloat(L("Camera Near"), &cameraNear, 0.1f, 500000.0f, "%.1f"))
                     config->FsrCameraNear = cameraNear;
                 ShowHelpMarker(L("Might help achieve better image quality\n"
-                               "And potentially less ghosting"));
+                                 "And potentially less ghosting"));
 
                 if (ImGui::SliderFloat(L("Camera Far"), &cameraFar, 0.1f, 500000.0f, "%.1f"))
                     config->FsrCameraFar = cameraFar;
                 ShowHelpMarker(L("Might help achieve better image quality\n"
-                               "And potentially less ghosting"));
+                                 "And potentially less ghosting"));
 
                 if (ImGui::Button(L("Reset Camera Values")))
                 {
@@ -5199,7 +5205,7 @@ void MenuCommon::RenderFramerateSettings(RenderMenuContext& ctx)
                 config->FGOutput.value_or_default() == FGOutput::FSRFG)
                 ImGui::TextColored(toneMapColor(ImVec4(1.f, 0.8f, 0.f, 1.f)),
                                    L("Using RTSS Reflex injection with FSR Anti-Lag 2.0 and FSR FG "
-                                   "might cause issues"));
+                                     "might cause issues"));
         }
         else
         {
@@ -5303,7 +5309,7 @@ void MenuCommon::RenderFakenvapiSettings(RenderMenuContext& ctx)
             config->FN_ForceLatencyFlex = forceLFX;
         }
         ShowHelpMarker(L("By default, FSR Anti-Lag 2.0/XeLL is used when available.\n"
-                       "This setting lets you force LatencyFlex instead"));
+                         "This setting lets you force LatencyFlex instead"));
         ImGui::EndDisabled();
 
         // Keep Force XeLL on the same line if LatencyFlex is visible
@@ -5319,7 +5325,7 @@ void MenuCommon::RenderFakenvapiSettings(RenderMenuContext& ctx)
         config->ForceXeLL = forceXell;
     }
     ShowHelpMarker(L("Allows XeLL to work without FG on non-Intel cards.\n\nDisables FG "
-                   "options\n\nRequires a restart"));
+                     "options\n\nRequires a restart"));
 
     if (activeForceXeLL != forceXell)
     {
@@ -5491,7 +5497,7 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
             }
         }
         ShowHelpMarker(L("Ignores the value sent by the game\n"
-                       "and uses the value set below"));
+                         "and uses the value set below"));
 
         ImGui::SameLine(0.0f, 16.0f * menuResScale);
 
@@ -5525,11 +5531,11 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                 config->RcasEnabled = rcas;
 
             ShowHelpMarker(L("Enable OptiScaler's sharpening filter\n"
-                           "By default uses a sharpening value provided by the game\n"
-                           "Select 'Override' under 'Sharpness' and adjust the slider\n"
-                           "to change it\n\n"
-                           "Some upscalers have their own sharpness filter, so this\n"
-                           "option is not always needed"));
+                             "By default uses a sharpening value provided by the game\n"
+                             "Select 'Override' under 'Sharpness' and adjust the slider\n"
+                             "to change it\n\n"
+                             "Some upscalers have their own sharpness filter, so this\n"
+                             "option is not always needed"));
 
             ImGui::BeginDisabled(!config->RcasEnabled.value_or(rcasEnabled));
 
@@ -5541,8 +5547,8 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
             }
 
             ShowHelpMarker(L("Use AMD's RCAS\n"
-                           "Modified to add Contrast parameter\n"
-                           "and MAS support"));
+                             "Modified to add Contrast parameter\n"
+                             "and MAS support"));
 
             ImGui::SameLine(0.0f, 6.0f);
 
@@ -5552,10 +5558,10 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
             }
 
             ShowHelpMarker(L("Use Depth Aware Sharpening (RCAS)\n"
-                           "Smarter sharpening with less artifacts,\n"
-                           "but also heavier\n\n"
-                           "The farther away is the object, the more\n"
-                           "sharpening is applied"));
+                             "Smarter sharpening with less artifacts,\n"
+                             "but also heavier\n\n"
+                             "The farther away is the object, the more\n"
+                             "sharpening is applied"));
 
             ImGui::SameLine(0.0f, 6.0f);
 
@@ -5566,11 +5572,11 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
             }
 
             ShowHelpMarker(L("Use Depth Aware Sharpening (DAS)\n"
-                           "Depth-aware directional adaptive luma sharpener\n"
-                           "Smarter sharpening with less artifacts,\n"
-                           "but also heavier\n\n"
-                           "The farther away is the object, the more\n"
-                           "sharpening is applied"));
+                             "Depth-aware directional adaptive luma sharpener\n"
+                             "Smarter sharpening with less artifacts,\n"
+                             "but also heavier\n\n"
+                             "The farther away is the object, the more\n"
+                             "sharpening is applied"));
 
             ImGui::Spacing();
 
@@ -5586,9 +5592,9 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                     config->MotionSharpnessDebug = overrideMSDebug;
 
                 ShowHelpMarker(L("Enable DA + MAS debug views\n"
-                               "Blue tint for DA detected edges\n\n"
-                               "More red areas will have more sharpness applied\n"
-                               "Green areas will get reduced sharpness"));
+                                 "Blue tint for DA detected edges\n\n"
+                                 "More red areas will have more sharpness applied\n"
+                                 "Green areas will get reduced sharpness"));
 
                 if (auto ch = ScopedCollapsingHeader(L("Advanced DA Parameters")); ch.IsHeaderOpen())
                 {
@@ -5604,9 +5610,9 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                     }
 
                     ShowHelpMarker(L("Clamps the final image to the [0, 1] range.\n\n"
-                                   "Prevents overshoot artifacts such as bright halos or negative colors.\n"
-                                   "Recommended for LDR pipelines; optional for HDR depending on tone-mapping.\n\n"
-                                   "When not set OptiScaler controls it via upscalers HDR flag"));
+                                     "Prevents overshoot artifacts such as bright halos or negative colors.\n"
+                                     "Recommended for LDR pipelines; optional for HDR depending on tone-mapping.\n\n"
+                                     "When not set OptiScaler controls it via upscalers HDR flag"));
 
                     if (currentFeature->DepthLinear())
                     {
@@ -5615,20 +5621,20 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                             config->DADepthBias = depthBias;
 
                         ShowHelpMarker(L("Ignores small depth differences before edge detection.\n\n"
-                                       "Higher values reduce flickering and noise from minor depth changes, but may "
-                                       "soften real geometry edges.\n"
-                                       "Lower values preserve fine detail but can cause unstable or noisy edge "
-                                       "detection."));
+                                         "Higher values reduce flickering and noise from minor depth changes, but may "
+                                         "soften real geometry edges.\n"
+                                         "Lower values preserve fine detail but can cause unstable or noisy edge "
+                                         "detection."));
 
                         float depthScale = config->DADepthScale.value_or(250.0f);
                         if (ImGui::SliderFloat(L("Depth Scale"), &depthScale, 100.0f, 600.0f, "%.1f"))
                             config->DADepthScale = depthScale;
 
                         ShowHelpMarker(L("Controls how strongly sharpening is reduced across depth edges.\n\n"
-                                       "Higher values more aggressively prevent sharpening across object boundaries "
-                                       "(reduces halos).\n"
-                                       "Lower values allow more sharpening to pass across edges (sharper but "
-                                       "riskier)."));
+                                         "Higher values more aggressively prevent sharpening across object boundaries "
+                                         "(reduces halos).\n"
+                                         "Lower values allow more sharpening to pass across edges (sharper but "
+                                         "riskier)."));
                     }
                     else
                     {
@@ -5637,20 +5643,20 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                             config->DADepthBias = depthBias;
 
                         ShowHelpMarker(L("Ignores small depth differences before edge detection.\n\n"
-                                       "Higher values reduce flickering and noise from minor depth changes, but may "
-                                       "soften real geometry edges.\n"
-                                       "Lower values preserve fine detail but can cause unstable or noisy edge "
-                                       "detection."));
+                                         "Higher values reduce flickering and noise from minor depth changes, but may "
+                                         "soften real geometry edges.\n"
+                                         "Lower values preserve fine detail but can cause unstable or noisy edge "
+                                         "detection."));
 
                         float depthScale = config->DADepthScale.value_or(35.0f);
                         if (ImGui::SliderFloat(L("Depth Scale"), &depthScale, 25.0f, 400.0f, "%.1f"))
                             config->DADepthScale = depthScale;
 
                         ShowHelpMarker(L("Controls how strongly sharpening is reduced across depth edges.\n\n"
-                                       "Higher values more aggressively prevent sharpening across object boundaries "
-                                       "(reduces halos).\n"
-                                       "Lower values allow more sharpening to pass across edges (sharper but "
-                                       "riskier)."));
+                                         "Higher values more aggressively prevent sharpening across object boundaries "
+                                         "(reduces halos).\n"
+                                         "Lower values allow more sharpening to pass across edges (sharper but "
+                                         "riskier)."));
                     }
 
                     if (ImGui::Button(L("Reset Depth Values")))
@@ -5675,7 +5681,7 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                     config->Contrast = contrast;
 
                 ShowHelpMarker(L("Positive values decrease sharpness at high contrast areas.\n"
-                               "Negative values increase sharpness at high contrast areas."));
+                                 "Negative values increase sharpness at high contrast areas."));
 
                 ImGui::EndDisabled();
             }
@@ -5694,7 +5700,7 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                         ImGui::Checkbox(L("MAS Debug"), &overrideMSDebug))
                         config->MotionSharpnessDebug = overrideMSDebug;
                     ShowHelpMarker(L("Areas that are more red will have more sharpness applied\n"
-                                   "Green areas will get reduced sharpness"));
+                                     "Green areas will get reduced sharpness"));
                 }
 
                 float motionSharpness = config->MotionSharpness.value_or_default();
@@ -5702,26 +5708,26 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                 config->MotionSharpness = motionSharpness;
 
                 ShowHelpMarker(L("Maximum amount of sharpness that motion can add or remove.\n\n"
-                               "Negative values reduce sharpening in motion (recommended).\n"
-                               "Positive values increase sharpening in motion.\n\n"
-                               "The final adjustment scales with motion and is capped at this value."));
+                                 "Negative values reduce sharpening in motion (recommended).\n"
+                                 "Positive values increase sharpening in motion.\n\n"
+                                 "The final adjustment scales with motion and is capped at this value."));
 
                 float motionThreshod = config->MotionThreshold.value_or_default();
                 ImGui::SliderFloat(L("MotionThreshod"), &motionThreshod, 0.0f, 100.0f, "%.2f");
                 config->MotionThreshold = motionThreshod;
 
                 ShowHelpMarker(L("Minimum motion required before motion-based sharpening adjustment begins.\n\n"
-                               "Higher values ignore small movements (more stable).\n"
-                               "Lower values react to subtle motion (more sensitive)."));
+                                 "Higher values ignore small movements (more stable).\n"
+                                 "Lower values react to subtle motion (more sensitive)."));
 
                 float motionScale = config->MotionScaleLimit.value_or_default();
                 ImGui::SliderFloat(L("MotionRange"), &motionScale, 0.01f, 100.0f, "%.2f");
                 config->MotionScaleLimit = motionScale;
 
                 ShowHelpMarker(L("Defines the motion range over which the effect ramps from zero to full strength.\n\n"
-                               "Values above the threshold are mapped into this range.\n"
-                               "Larger values make the response smoother and more gradual.\n"
-                               "Smaller values make the effect react more quickly and aggressively."));
+                                 "Values above the threshold are mapped into this range.\n"
+                                 "Larger values make the response smoother and more gradual.\n"
+                                 "Smaller values make the effect react more quickly and aggressively."));
 
                 ImGui::EndDisabled();
 
@@ -5748,8 +5754,8 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                 config->QualityRatioOverrideEnabled = false;
         }
         ShowHelpMarker(L("Overrides every upscaler preset with the set value\n\n"
-                       "1.5x on a 1080p screen means an internal res of 720p\n"
-                       "1080 / 1.5 = 720"));
+                         "1.5x on a 1080p screen means an internal res of 720p\n"
+                         "1080 / 1.5 = 720"));
 
         if (bool qOverride = config->QualityRatioOverrideEnabled.value_or_default();
             ImGui::Checkbox(L("Override per quality preset"), &qOverride))
@@ -5761,9 +5767,9 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
         }
 
         ShowHelpMarker(L("Lets you override each preset's ratio individually\n"
-                       "Note that not every game supports every quality preset\n\n"
-                       "1.5x on a 1080p screen means internal resolution of 720p\n"
-                       "1080 / 1.5 = 720"));
+                         "Note that not every game supports every quality preset\n\n"
+                         "1.5x on a 1080p screen means internal resolution of 720p\n"
+                         "1080 / 1.5 = 720"));
 
         if (config->UpscaleRatioOverrideEnabled.value_or_default())
         {
@@ -5825,11 +5831,11 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                 ImGui::EndDisabled();
 
                 ShowHelpMarker(L("Upscales the image internally to a higher output resolution\n"
-                               "then downscales it back to your display resolution\n\n"
-                               "Values <1.0 make the upscaler cheaper\n"
-                               "Values >1.0 make image sharper at the cost of performance\n\n"
-                               "If greyed out, please check Git Wiki - Unreal Engine tweaks\n\n"
-                               "Target res and total ratio at the bottom (max. total 3.0!)"));
+                                 "then downscales it back to your display resolution\n\n"
+                                 "Values <1.0 make the upscaler cheaper\n"
+                                 "Values >1.0 make image sharper at the cost of performance\n\n"
+                                 "If greyed out, please check Git Wiki - Unreal Engine tweaks\n\n"
+                                 "Target res and total ratio at the bottom (max. total 3.0!)"));
 
                 ImGui::SameLine(0.0f, 6.0f);
 
@@ -5937,8 +5943,8 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
             }
             ShowResetButton(&config->AutoExposure, "R");
             ShowHelpMarker(L("Some Unreal Engine games need this\n\n"
-                           "Try using if colours flickering or\n"
-                           "objects have ghosting trails"));
+                             "Try using if colours flickering or\n"
+                             "objects have ghosting trails"));
 
             ImGui::EndDisabled();
 
@@ -5967,8 +5973,8 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
 
             if (accessToReactiveMask)
                 ShowHelpMarker(L("Allows the use of a Reactive mask\n"
-                               "Keep in mind that a Reactive mask sent to DLSS\n"
-                               "will not produce a good image in combination with FSR/XeSS"));
+                                 "Keep in mind that a Reactive mask sent to DLSS\n"
+                                 "will not produce a good image in combination with FSR/XeSS"));
             else
                 ShowHelpMarker(L("Option disabled because the game doesn't provide a Reactive mask"));
 
@@ -6017,7 +6023,7 @@ void MenuCommon::RenderActiveImageSettings(RenderMenuContext& ctx)
                     }
                     ShowResetButton(&config->DisplayResolution, "R##4");
                     ShowHelpMarker(L("Mostly a fix for Unreal Engine games\n"
-                                   "Top left part of the screen will be blurry"));
+                                     "Top left part of the screen will be blurry"));
 
                     ImGui::TableNextColumn();
 
@@ -6182,8 +6188,8 @@ void MenuCommon::RenderAdvancedSettings(RenderMenuContext& ctx)
                 config->ExtendedLimits = extendedLimits;
 
             ShowHelpMarker(L("Extended sliders limit for quality presets\n\n"
-                           "Using this option changes resolution detection logic\n"
-                           "and might cause issues and crashes!"));
+                             "Using this option changes resolution detection logic\n"
+                             "and might cause issues and crashes!"));
         }
 
         bool pcShaders = config->UsePrecompiledShaders.value_or_default();
@@ -6962,12 +6968,12 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
             ImGui::PopItemWidth();
 
             ShowHelpMarker(L("Controls the DXGI Present sync interval, which determines how\n"
-                           "the swap chain waits for vertical refresh.\n\n"
-                           "0  = Present immediately, no VSync wait.\n"
-                           "1  = Sync to every refresh, normal VSync.\n"
-                           "2+ = Present every N refreshes, reducing effective frame rate.\n\n"
-                           "Higher values can reduce tearing but may increase latency and cap FPS.\n"
-                           "For most games, use 0 for lowest latency or 1 for normal VSync."));
+                             "the swap chain waits for vertical refresh.\n\n"
+                             "0  = Present immediately, no VSync wait.\n"
+                             "1  = Sync to every refresh, normal VSync.\n"
+                             "2+ = Present every N refreshes, reducing effective frame rate.\n\n"
+                             "Higher values can reduce tearing but may increase latency and cap FPS.\n"
+                             "For most games, use 0 for lowest latency or 1 for normal VSync."));
 
             ImGui::EndDisabled();
             ImGui::SameLine(0.0f, 16.0f);
@@ -6991,8 +6997,8 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
         // MIPMAP BIAS & Anisotropy -----------------------------
         ImGui::Spacing();
         if (auto ch = ScopedCollapsingHeader(L("Mipmap Bias"), (currentFeature == nullptr || currentFeature->IsFrozen())
-                                                                ? ImGuiTreeNodeFlags_DefaultOpen
-                                                                : 0);
+                                                                   ? ImGuiTreeNodeFlags_DefaultOpen
+                                                                   : 0);
             ch.IsHeaderOpen())
         {
             ScopedIndent indent {};
@@ -7002,9 +7008,9 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
 
             ImGui::SliderFloat(L("Mipmap Bias##2"), &_mipBias, -15.0f, 15.0f, "%.6f");
             ShowHelpMarker(L("Can help with blurry textures in broken games\n"
-                           "Negative values will make textures sharper\n"
-                           "Positive values will make textures more blurry\n\n"
-                           "Has a small performance impact"));
+                             "Negative values will make textures sharper\n"
+                             "Positive values will make textures more blurry\n\n"
+                             "Has a small performance impact"));
 
             ImGui::BeginDisabled(!config->MipmapBiasOverride.has_value());
             {
@@ -7035,8 +7041,8 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
                     }
 
                     ShowHelpMarker(L("Apply override value as scale multiplier\n"
-                                   "When using scale mode, please use positive\n"
-                                   "override values to increase sharpness!"));
+                                     "When using scale mode, please use positive\n"
+                                     "override values to increase sharpness!"));
                 }
                 ImGui::EndDisabled();
 
@@ -7045,8 +7051,8 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
                     config->MipmapBiasOverrideAll = mbAll;
 
                 ShowHelpMarker(L("Override all textures mipmap values\n"
-                               "Normally OptiScaler only overrides\n"
-                               "below zero mipmap values!"));
+                                 "Normally OptiScaler only overrides\n"
+                                 "below zero mipmap values!"));
             }
             ImGui::EndDisabled();
 
@@ -7093,13 +7099,13 @@ void MenuCommon::RenderApiAndTextureSettings(RenderMenuContext& ctx)
                 }
                 else if (config->MipmapBiasScaleOverride.value_or_default())
                 {
-                    ImGui::Text(L("Current : %.3f / %.3f, Target: Base * %.3f"), state.lastMipBias, state.lastMipBiasMax,
-                                config->MipmapBiasOverride.value());
+                    ImGui::Text(L("Current : %.3f / %.3f, Target: Base * %.3f"), state.lastMipBias,
+                                state.lastMipBiasMax, config->MipmapBiasOverride.value());
                 }
                 else
                 {
-                    ImGui::Text(L("Current : %.3f / %.3f, Target: Base + %.3f"), state.lastMipBias, state.lastMipBiasMax,
-                                config->MipmapBiasOverride.value());
+                    ImGui::Text(L("Current : %.3f / %.3f, Target: Base + %.3f"), state.lastMipBias,
+                                state.lastMipBiasMax, config->MipmapBiasOverride.value());
                 }
             }
             else
@@ -7454,8 +7460,8 @@ void MenuCommon::RenderMainMenuBottomBar(RenderMenuContext& ctx)
         pIO->Platform_OpenInShellFn(ctx, "https://github.com/optiscaler/OptiScaler/wiki");
     }
     ShowHelpMarker(L("Click to open the OptiScaler Wiki page\nin your default browser\n\n"
-                   "Compatibility list with known game issues\nand workarounds, FG options explained\n"
-                   "and other useful info"));
+                     "Compatibility list with known game issues\nand workarounds, FG options explained\n"
+                     "and other useful info"));
 
     ImGui::Spacing();
     ImGui::Separator();

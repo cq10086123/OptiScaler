@@ -16,29 +16,26 @@
 
 namespace Localization
 {
-    // Keep in sync with [Menu] Language in OptiScaler.ini
-    enum class Language
-    {
-        English = 0,
-        Chinese = 1,
-    };
+// Keep in sync with [Menu] Language in OptiScaler.ini
+enum class Language
+{
+    English = 0,
+    Chinese = 1,
+};
 
-    // Current UI language, read from Config (so runtime switching works)
-    Language Current();
+// Current UI language, read from Config (so runtime switching works)
+Language Current();
 
-    bool IsChinese();
+bool IsChinese();
 
-    // Translate an English UI string to the current language.
-    // Returns the input unchanged for English or when no translation exists.
-    const char* L(const char* english);
+// Translate an English UI string to the current language.
+// Returns the input unchanged for English or when no translation exists.
+const char* L(const char* english);
 
-    // Localized display names, e.g. for the language combo box
-    const char* Name(Language lang);
-    const char* CurrentName();
-}
+// Localized display names, e.g. for the language combo box
+const char* Name(Language lang);
+const char* CurrentName();
+} // namespace Localization
 
 // Convenience free function so call sites read as L("English text")
-inline const char* L(const char* english)
-{
-    return Localization::L(english);
-}
+inline const char* L(const char* english) { return Localization::L(english); }
