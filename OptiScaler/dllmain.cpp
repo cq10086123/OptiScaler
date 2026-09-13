@@ -2155,7 +2155,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
                     {
                         ImGuiToast notification({ ImGuiToastType::Warning, 30000,
                                                   L("That's likely unintended and will lead to big OptiScaler.log\n"
-                                                  "Please disable logging to file and delete OptiScaler.log") });
+                                                    "Please disable logging to file and delete OptiScaler.log") });
 
                         notification.setTitle(L("Trace logging still active"));
 
