@@ -1,4 +1,4 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "menu_common.h"
 
 #include "input/input_system.h"
@@ -31,6 +31,9 @@
 
 #include <array>
 #include <chrono>
+// std::rand / std::srand and std::time are used for the splash message
+#include <cstdlib>
+#include <ctime>
 #include <memory>
 #include <type_traits>
 #include <misc/IdentifyGpu.h>
