@@ -11,6 +11,8 @@
 </div>
 <br />
 
+> 🇨🇳 **简体中文文档**: [README_zh-CN.md](README_zh-CN.md) · [Config_zh-CN.md](Config_zh-CN.md) · [Features_zh-CN.md](Features_zh-CN.md) · [Issues_zh-CN.md](Issues_zh-CN.md) · [Spoofing_zh-CN.md](Spoofing_zh-CN.md) · [中文配置模板](OptiScaler_zh.ini) — 游戏内菜单也支持简体中文 (菜单底栏 Language 选项 / `[Menu] Language=1`)
+
 ## Table of Contents
 
 **1.** [**About**](#about)  

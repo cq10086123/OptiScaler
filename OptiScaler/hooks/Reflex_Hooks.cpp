@@ -2,6 +2,8 @@
 #include "Reflex_Hooks.h"
 #include <Config.h>
 
+#include "i18n/Localization.h"
+
 #include <nvapi/fakenvapi.h>
 
 #include <proxies/Streamline_Proxy.h>
@@ -116,9 +118,9 @@ NvAPI_Status ReflexHooks::hkNvAPI_D3D_SetLatencyMarker(IUnknown* pDev,
         if (!State::Instance().rtssReflexInjection && State::Instance().activeFgOutput == FGOutput::XeFG)
         {
             ImGuiToast notification { ImGuiToastType::Warning, 10000 };
-            notification.setTitle("RTSS + XeFG detected");
+            notification.setTitle(L("RTSS + XeFG detected"));
             notification.setContent(
-                "RTSS Reflex Injection is known to cause issues.\nEspecially when using XeFG.\nPlease disable it.");
+                L("RTSS Reflex Injection is known to cause issues.\nEspecially when using XeFG.\nPlease disable it."));
             ImGui::InsertNotification(notification);
         }
 

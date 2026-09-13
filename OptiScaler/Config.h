@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "SysUtils.h"
 #include "State.h"
 
@@ -346,6 +346,8 @@ class Config
     CustomOptional<bool> DisableSplash { false };
     CustomOptional<float> FontSize { 14.0f };
     CustomOptional<std::wstring, NoDefault> TTFFontPath;
+    /// UI language: 0 = English, 1 = Simplified Chinese (简体中文). Default: Chinese.
+    CustomOptional<int> Language { 1 };
     CustomOptional<int> FGShortcutKey { VK_END };
     CustomOptional<bool> LightTheme { false };
     CustomOptional<bool> OverlaysUseTheme { false };

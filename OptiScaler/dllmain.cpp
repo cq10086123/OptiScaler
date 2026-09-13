@@ -1,8 +1,10 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "dllmain.h"
 
 #include "Util.h"
 #include "Config.h"
+
+#include "i18n/Localization.h"
 #include "Logger.h"
 #include "resource.h"
 #include "DllNames.h"
@@ -2152,10 +2154,10 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
                         Config::Instance()->LogToFile.value_or_default())
                     {
                         ImGuiToast notification({ ImGuiToastType::Warning, 30000,
-                                                  "That's likely unintended and will lead to big OptiScaler.log\n"
-                                                  "Please disable logging to file and delete OptiScaler.log" });
+                                                  L("That's likely unintended and will lead to big OptiScaler.log\n"
+                                                  "Please disable logging to file and delete OptiScaler.log") });
 
-                        notification.setTitle("Trace logging still active");
+                        notification.setTitle(L("Trace logging still active"));
 
                         ImGui::InsertNotification(notification);
                     }
